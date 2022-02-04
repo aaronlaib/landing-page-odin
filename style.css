@@ -90,11 +90,20 @@ a {
   color: #f9faf8;
   font-size: 48px;
   font-style: bold;
+  margin: 0;
 }
 
 .hero-secondary-text {
   font-size: 18px;
   color: #e5e7eb;
+  margin: 0;
+}
+
+.main-btn {
+  border-radius: 10px;
+  background-color: #3882f6;
+  color: white;
+  padding: 0px 10px;
 }
 
 .main-right-image img {
@@ -155,7 +164,7 @@ a {
 .quote-text {
   font-size: 36px;
   font-weight: lighter;
-  width: 50%;
+  width: 70%;
 }
 
 .cta-container {
@@ -182,7 +191,7 @@ a {
   border-color: white;
   background-color: #3882f6;
   color: white;
-  padding: 0 20px;
+  padding: 0px 20px;
 }
 
 .footer {
