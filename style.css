@@ -1,3 +1,7 @@
+:root {
+  --main-width: 60%;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -6,10 +10,17 @@ body {
   font-family: roboto, sans-serif;
 }
 
+.header-container {
+  display: flex;
+  width: 100%;
+  background-color: #1f2937;
+  justify-content: center;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: #1f2937;
+  width: var(--main-width);
 }
 
 .header-links {
@@ -41,12 +52,24 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-grow: 1;
+  height: 100vh;
+  width: 100%;
 }
 
+.content-container > * {
+  flex: 1;
+}
+
+.container-main {
+  display: flex;
+  background-color: #1f2937;
+  width: 100%;
+  justify-content: center;
+}
 .content-main {
   display: flex;
   background-color: #1f2937;
+  width: var(--main-width);
 }
 
 .main-left {
@@ -86,15 +109,18 @@ a {
 .content-images {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  width: var(--main-width);
 }
 
 .info {
   display: flex;
   justify-content: center;
+  font-size: 24px;
 }
 
 .images-text img {
-  width: 100px;
+  width: 125px;
   height: auto;
   border-radius: 10px;
 }
@@ -102,7 +128,7 @@ a {
 .images-text-container {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .text {
@@ -110,24 +136,45 @@ a {
   justify-content: center;
 }
 
+.container-quote {
+  display: flex;
+  background-color: #e5e7eb;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
 .content-quote {
   display: flex;
   background-color: #e5e7eb;
   flex-direction: column;
+  width: var(--main-width);
+  align-items: center;
 }
 
 .quote-text {
   font-size: 36px;
   font-weight: lighter;
+  width: 50%;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
 }
 
 .call-to-action {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
   padding: 30px 40px;
   background-color: #3882f6;
   border-radius: 10px;
   color: white;
+  width: var(--main-width);
 }
 
 .btn-call-to-action {
@@ -135,10 +182,18 @@ a {
   border-color: white;
   background-color: #3882f6;
   color: white;
+  padding: 0 20px;
 }
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 20px;
 }
+
+/* * {
+  border: red 1px solid;
+} */
